@@ -1,0 +1,40 @@
+@import "./iconfont.wxss";
+
+.search-box{
+  box-sizing: border-box;
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding: 15rpx 20rpx;
+}
+.search{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  border: 1rpx solid #777777;
+  border-radius: 70rpx;
+  padding: 0 20rpx;
+}
+.icon-search{
+  font-size: 40rpx;
+  color: #777777;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.ipt{
+  height: 70rpx;
+  line-height: 70rpx;
+  flex-grow: 1;
+  padding: 0rpx 20rpx;
+}
+.cancel{
+  color: #777777;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-left: 20rpx;
+}
+
+.placeholder{
+  text-align: center;
+}

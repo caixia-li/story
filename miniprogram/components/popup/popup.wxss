@@ -1,0 +1,93 @@
+.cover{
+  position: fixed;
+  top: 0;
+  width: 750rpx;
+  height: 100%;
+  background-color: #555555;
+  opacity: 0.4;
+}
+.popup{
+  position: fixed;
+  bottom: 0;
+  padding:0px 40rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-top: 1px solid #e7e7e7;
+}
+.content{
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0rpx;
+}
+
+.book{
+  display: flex;
+  height: 150rpx;
+  align-items: center;
+}
+.book image{
+  width: 100rpx;
+  height: 130rpx;
+}
+.book-right{
+  width: 450rpx;
+  height: 130rpx;
+  margin-left: 10rpx;
+}
+.title{
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+.author{
+  font-size: 26rpx;
+   color: #777777;
+   margin-top: 10rpx;
+}
+.detail{
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  border: 1px solid #e0e0e0;
+  color: #777777;
+  border-radius: 10rpx;
+}
+
+.control{
+  display: flex;
+  height: 150rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+
+button{
+  margin: 0;
+  padding: 0;
+  font-size: 32rpx;
+  border:none;
+  background-color: transparent;
+  line-height: 1;
+}
+button::after{
+  border:none;
+  background-color: transparent；
+}
+.button-hover{
+  background-color: transparent；
+}
+
+.control-item{
+  padding: 20rpx;
+  text-align: center;
+}
+
+.icon{
+  color: #777777;
+  font-size: 44rpx;
+}
+
+.text{
+  color: #777777;
+}
+

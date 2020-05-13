@@ -1,0 +1,27 @@
+<view class="cover" hidden="{{!isShow}}" bindtap="onClose"></view>
+<view class="popup" hidden="{{!isShow}}">
+  <view class="content">
+    <view class="book">
+      <image src="{{bookDetail.imgSrc}}" mode="scaleToFill"></image>
+      <view class="book-right">
+        <view class="title">{{bookDetail.title}}</view>
+        <view class="author">{{bookDetail.author}}</view>
+      </view>
+    </view>
+    <view class="detail" data-bookId="{{bookDetail.bookId}}" bindtap="goBookDetail">详情</view>
+  </view>
+  <view class="control">
+    <view class="control-item"  bindtap="onDel"  data-bookId="{{bookDetail.bookId}}">
+      <i class="iconfont shanchu icon"></i>
+      <view class="text">删除</view>
+    </view>
+    <button class="control-item" 
+    open-type="share" 
+    data-bookId="{{bookDetail.bookId}}"
+    data-title="{{bookDetail.title}}"
+    data-imgSrc="{{bookDetail.imgSrc}}">
+      <i class="iconfont fenxiang icon"></i>
+      <view class="text" >分享</view>
+    </button>
+  </view>
+</view>

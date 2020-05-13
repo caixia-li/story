@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "recommend":"/components/recommend/recommend",
+    "book-list-item":"/components/book-list-item/book-list-item"
+  }
+}

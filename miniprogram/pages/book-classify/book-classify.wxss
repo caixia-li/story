@@ -1,0 +1,32 @@
+.classify{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rpx 20rpx;
+}
+
+.classify-card{
+  box-sizing: border-box;
+  width: 350rpx;
+  display: flex;
+  padding: 20rpx ;
+}
+.img{
+  height: 120rpx;
+  width: 100rpx;
+}
+.detail{
+  margin-left: 20rpx;
+}
+.classify-title{
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.classify-num{
+  color: #777777;
+  font-size: 30rpx;
+}
+
+.icon-back{
+  padding: 20rpx;
+}

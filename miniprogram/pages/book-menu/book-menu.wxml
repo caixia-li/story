@@ -1,0 +1,5 @@
+<view class="menu">
+<block wx:for="{{catalog}}" wx:key="index">
+  <view class="menu-item {{index==nowIndex?'menu-item-active':''}}" data-index="{{index}}" bindtap="goArticle">{{item.title}}</view>
+</block>
+</view>

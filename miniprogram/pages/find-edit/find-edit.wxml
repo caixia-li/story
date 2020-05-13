@@ -1,0 +1,18 @@
+<view class="text">
+  <textarea placeholder="<请输入内容" class="textarea" bindinput="onInput"></textarea>
+</view>
+
+<view class="box">
+  <block wx:for="{{imgList}}" wx:key="index">
+    <view class="img-box">
+      <image src="{{item}}" mode="scaleToFill" class="img"></image>
+      <view class="iconfont icondel icon-del" bindtap="onDel" data-index="{{index}}"></view>
+    </view>
+  </block>
+  <view class="iconfont iconplus img icon-add" bindtap="onChooseImage" hidden="{{!isAddShow}}"></view>
+</view>
+
+  <view class="tip">
+    <text class="{{wordsNum>=140?'tip-text':''}}">{{wordsNum}}</text>/140
+    <view class="publish" bindtap="onPublish">发布</view>
+  </view>

@@ -1,0 +1,22 @@
+<view class="swiper-box">
+<swiper autoplay="false" circular="true" indicator-dots="true" style="height:266rpx;" duration="2000" bindchange="currentChange">
+  <block wx:for="{{swiperList}}" wx:for-item="item" wx:key="bookId">
+    <swiper-item>
+      <image src="{{item.imgSrc}}" mode="scaleToFill" style="width:100%;height:100%" bindtap="goBookDetail" data-bookId="{{item.bookId}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view class="triangle"></view>
+<view class="intro-box" bindtap="goBookDetail" data-bookId="{{introList[current].bookId}}">
+  <view class="head">
+    <view class="title">{{introList[current].title}}</view>
+    <block wx:for="{{introList[current].tags}}" wx:key="index">
+      <view wx:if="{{index>2}}" class="tag">
+        {{item}}
+      </view>
+    </block>
+  </view>
+  <view class="intro">{{introList[current].intro}}</view>
+</view>

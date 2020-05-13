@@ -1,0 +1,18 @@
+<search bind:onSearch="onSearch" bind:onCancel="onCancel"></search>
+
+<view class="classify" hidden="{{isShow}}">
+  <block wx:for="{{classifyList}}" wx:key="index">
+    <view class="classify-card" data-index="{{index}}" bindtap="getNavList">
+      <image src="{{item.imgUrl}}" mode="scaleToFill" class="img"></image>
+      <view class="detail">
+        <view class="classify-title">{{navList[index]}}</view>
+        <view class="classify-num">{{item.total}}部</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view hidden="{{!isShow}}">
+<i class="iconfont icon- icon-back" bindtap="goBack"></i>
+  <book-list-item bookList="{{bookList}}"></book-list-item>
+</view>

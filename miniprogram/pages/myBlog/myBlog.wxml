@@ -1,0 +1,3 @@
+<block wx:for="{{blogList}}" wx:key="_id">
+  <blog-card blog="{{item}}" bind:onComment="onComment"></blog-card>
+</block>

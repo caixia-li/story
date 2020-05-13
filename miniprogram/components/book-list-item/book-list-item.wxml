@@ -1,0 +1,12 @@
+<view class="booklist">
+  <block wx:for="{{bookList}}" wx:key="bookId">
+    <view class="booklist-item" data-bookId="{{item.bookId}}" bindtap="goBookDetail">
+      <image src="{{item.imgSrc}}" mode="scaleToFill"></image>
+      <view class="booklist-detail">
+        <view class="title">{{item.title}}</view>
+        <view class="author">{{item.author}}</view>
+        <view class="sign">{{item.sign}}</view>
+      </view>
+    </view>
+  </block>
+</view>

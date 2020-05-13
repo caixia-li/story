@@ -1,0 +1,18 @@
+<view class="cover" style="background-image:url('{{swiperList[current].imgSrc}}');" wx:if="{{chooseNavIndex==0}}"></view>
+<view class="content">
+  <view class="nav">
+  <block wx:for="{{navList}}" wx:key="index">
+    <view class="{{chooseNavIndex==index?'nav-active':''}}" data-index="{{index}}" bindtap="getChooseNavIndex">{{item}}</view>
+  </block>
+</view>
+
+<view wx:if="{{chooseNavIndex==0}}" >
+  <recommend swiperList="{{swiperList}}" id="recommend" bind:currentChange="currentChange"></recommend>
+</view>
+
+<view wx:if="{{chooseNavIndex != 0 && chooseNavIndex != 6}}" >
+  <book-list-item bookList="{{bookList}}"></book-list-item>
+</view>
+</view>
+
+

@@ -1,0 +1,18 @@
+.menu{
+  width: 750rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+  background-color: #f3f3f3;
+  color: #777777;
+  font-family: "kaiti";
+}
+.menu-item{
+  font-size: 36rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.menu-item-active{
+  color:#d81e06;
+}

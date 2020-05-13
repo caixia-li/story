@@ -1,0 +1,8 @@
+<view class="comment-box">
+  <view class="comment-head">
+    <image src="{{commentItem.avatarUrl}}" mode="scaleToFill" class="avatar"></image>
+    <text class="nickName">{{commentItem.nickName}}</text>
+  </view>
+  <view class="comment">{{commentItem.content}}</view>
+  <view class="time">{{createTime}}</view>
+</view>

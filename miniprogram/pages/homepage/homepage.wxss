@@ -1,0 +1,34 @@
+page{
+  background-color: #f3f3f3;
+  height: 100%;
+  width: 750rpx;
+}
+
+.cover{
+  width: 750rpx;
+  height: 100%;
+  background-color: #f3f3f3;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: blur(40px);
+}
+
+.content{
+  position: absolute;
+  top: 0;
+  width: 750rpx;
+}
+.nav{
+  top: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  color: #777777;
+  font-size: 34rpx;
+}
+.nav-active{
+  color: #d81e06;
+}
+

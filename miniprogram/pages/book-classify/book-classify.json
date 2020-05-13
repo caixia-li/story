@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "search":"/components/search/search",
+    "book-list-item": "/components/book-list-item/book-list-item"
+  },
+  "navigationBarTitleText": "分类"
+}

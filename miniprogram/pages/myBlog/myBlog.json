@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "blog-card": "/components/blog-card/blog-card"
+  },
+  "navigationBarTitleText": "我的生活圈",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black"
+}

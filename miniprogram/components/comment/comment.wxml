@@ -1,0 +1,8 @@
+<view class="comment" hidden="{{!isShow}}" style="buttom:{{bottom}}">
+  <i class="iconfont icon-del close-icon" bindtap="onClose"></i>
+  <textarea placeholder="请输入内容" auto-focus="true" bindinput="onInput" bindfocus="onFocus" bindblur="onBlur" bindconfirm="onConfirm" class="text"></textarea>
+  <view class="num">
+    <text class="{{warning?'num-warning':''}}">{{words}}</text>/140
+    <text class="btn" bindtap="onSend">发送</text>
+  </view>
+</view>

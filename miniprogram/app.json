@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/mine/mine",
+    "pages/find/find",
+    "pages/bookrack/bookrack",
+    "pages/book-detail/book-detail",
+    "pages/article/article",
+    "pages/book-classify/book-classify",
+    "pages/book-menu/book-menu",
+    "pages/myCollect/myCollect",
+    "pages/myHistory/myHistory",
+    "pages/find-edit/find-edit",
+    "pages/blog-detail/blog-detail",
+    "pages/myBlog/myBlog"
+  ],
+  "window": {
+    "backgroundColor": "#d81e06",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "精品小说",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/bookrack/bookrack",
+        "text": "书架",
+        "iconPath": "/images/tabBar/bookrack.png",
+        "selectedIconPath": "/images/tabBar/bookrackSelected.png"
+      },
+      {
+        "pagePath": "pages/homepage/homepage",
+        "text": "精选",
+        "iconPath": "/images/tabBar/homepage.png",
+        "selectedIconPath": "/images/tabBar/homepageSelected.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "/images/tabBar/find.png",
+        "selectedIconPath": "/images/tabBar/findSelected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/tabBar/mine.png",
+        "selectedIconPath": "/images/tabBar/mineSelected.png"
+      }
+    ]
+  }
+}

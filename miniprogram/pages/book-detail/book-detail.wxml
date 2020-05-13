@@ -1,0 +1,77 @@
+<view class="cover">
+  <image src="{{imgSrc}}" mode="scaleToFill"></image>
+</view>
+
+<view class="content">
+  <image src="{{imgSrc}}" mode="scaleToFill"></image>
+  <view class="content-detail">
+    <view class="title">{{title}}</view>
+    <view class="author">{{author}}</view>
+    <view class="tags">
+      <block wx:for="{{tags}}" wx:key="index">
+        <view class="tag-item" wx:if="{{index>2}}">{{item}}</view>
+      </block>
+    </view>
+    <view class="sign">{{sign}}</view>
+  </view>
+</view>
+
+
+<view class="nav">
+  <block wx:for="{{navList}}" wx:key="index">
+    <view class="{{chooseNavIndex==index?'nav-active':''}} nav-item" data-index="{{index}}" bindtap="getChooseNavIndex">{{item}}</view>
+  </block>
+</view>
+
+<view class="detail">
+  <view wx:if="{{chooseNavIndex==0}}">
+    {{intro}}
+  </view>
+  <view wx:if="{{chooseNavIndex==1}}">
+    <block wx:for="{{catalog}}" wx:key="index">
+      <view class="detail-title" data-index="{{index}}" bindtap="goArticle">{{item.title}}</view>
+    </block>
+  </view>
+</view>
+
+
+<view class="bottom-box">
+  <view class="bottom">
+    <button class="bottom-item" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+      <i class="iconfont iconpinglun item-icon"></i>
+      <view class="text">评论</view>
+    </button>
+    <view class="bottom-item" wx:if="{{isCollect}}">
+      <i class="iconfont iconxingxing item-icon-active"></i>
+      <view class="text-active">已收藏</view>
+    </view>
+    <view class="bottom-item" wx:if="{{!isCollect}}" bindtap="onCollect">
+      <i class="iconfont iconxingxing item-icon"></i>
+      <view class="text">收藏</view>
+    </view>
+    <view class="bottom-item" wx:if="{{isAddBookrack}}">
+      <i class="iconfont iconjiarushujia item-icon-active"></i>
+      <view class="text-active">已加入书架</view>
+    </view>
+    <view class="bottom-item" wx:if="{{!isAddBookrack}}" bindtap="onAddBookrack">
+      <i class="iconfont iconjiarushujia item-icon"></i>
+      <view class="text">加入书架</view>
+    </view>
+    <button class="bottom-item" open-type="share">
+      <i class="iconfont iconfenxiang item-icon"></i>
+      <view class="text">分享</view>
+    </button>
+  </view>
+</view>
+
+<view class="comment" wx:if="{{chooseNavIndex==0}}">
+  <view class="comment-title">书友圈</view>
+  <block wx:for="{{commmentList}}" wx:key="_id">
+    <comment-card commentItem="{{ item }}" class="comment-item"></comment-card>
+  </block>
+  <view hidden="{{commmentList.length != 0}}" class="comment-empty">
+  暂时还没有小伙伴发表看法~
+  </view>
+</view>
+
+<comment isShow="{{isShow}}" bind:onSend="onSend" bind:onClose="onClose"></comment>

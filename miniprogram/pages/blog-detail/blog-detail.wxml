@@ -1,0 +1,7 @@
+<blog-card blog="{{blog}}" bind:onComment="onComment"></blog-card>
+
+<comment isShow="{{isShow}}" bind:onSend="onSend" bind:onClose="onClose"></comment>
+
+ <block wx:for="{{blogCommentList}}" wx:key="_id">
+    <comment-card commentItem="{{ item }}"></comment-card>
+  </block>

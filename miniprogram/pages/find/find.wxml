@@ -1,0 +1,15 @@
+<search bind:onSearch="onSearch" bind:onCancel="onCancel"></search>
+
+<block wx:for="{{blogList}}" wx:key="_id">
+  <blog-card blog="{{item}}"  bind:onComment="onComment" bind:onLike="onLike"></blog-card>
+</block>
+
+<view class="empty" wx:if="{{blogList.length == 0}}">
+暂时还没有小伙伴发布相关的生活圈哦~
+</view>
+
+<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">
+  <i class="iconfont iconpublish icon-publish"></i>
+</button>
+
+<comment isShow="{{isShow}}" bind:onSend="onSend" bind:onClose="onClose"></comment>

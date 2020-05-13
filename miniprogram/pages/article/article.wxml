@@ -1,0 +1,12 @@
+<view class="head">{{head}}</view>
+<view class="content">
+  <block wx:for="{{content}}" wx:key="index">
+    <view class="content-item">{{item}}</view>
+  </block>
+</view>
+
+<view class="control">
+  <view bindtap="onPre" class="control-item">上一章</view>
+  <view bindtap="toMenu" class="control-item">目录</view>
+  <view bindtap="onNext" class="control-item">下一章</view>
+</view>

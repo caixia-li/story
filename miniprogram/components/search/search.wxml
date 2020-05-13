@@ -1,0 +1,7 @@
+<view class="search-box">
+  <view class="search">
+  <i class="iconfont iconsousuo icon-search"></i>
+  <input confirm-type="search" placeholder="请输入内容" class="ipt" placeholder-class="placeholder" bindconfirm="onSearch" value="{{inputValue}}"></input>
+  </view>
+  <text class="cancel" bindtap="onCancel">取消</text>
+</view>

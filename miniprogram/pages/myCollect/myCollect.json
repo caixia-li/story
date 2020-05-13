@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+      "popup": "/components/popup/popup"
+    },
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "我的收藏"
+}

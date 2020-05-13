@@ -1,0 +1,87 @@
+@import "./iconfont.wxss";
+
+.blog-box {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0 20rpx;
+  font-family: "kaiti";
+  margin-bottom: 10rpx;
+  border-radius: 20rpx;
+  border-bottom: 1rpx solid #eeebeb;
+}
+
+.blog-head {
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+}
+
+.nickName {
+  margin-left: 10rpx;
+  color: #777;
+  font-size: 30rpx;
+}
+
+.blog {
+  line-height: 80rpx;
+}
+
+.img-box {
+  box-sizing: border-box;
+  width: 750rpx;
+  padding: 20rpx 0rpx 20rpx -10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  height: 230rpx;
+  width: 230rpx;
+  margin-left: 10rpx;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  line-height: 80rpx;
+}
+
+.time {
+  color: #777;
+  font-size: 28rpx;
+}
+
+.btn-box{
+  display: flex;
+}
+
+.icon-footer{
+  display: inline-block;
+  width: 60rpx;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.like{
+  color: #d81e06;
+}
+
+.btn{
+  border: none;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.btn::after{
+  border: none;
+}

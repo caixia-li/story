@@ -1,0 +1,48 @@
+@import "./iconfont.wxss";
+
+.comment{
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  padding: 20rpx;
+    border-top: 1rpx solid #eeebeb;
+}
+
+.close-icon{
+  display: inline-block;
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  font-size: 44rpx;
+  height: 60rpx;
+  width: 40rpx;
+  text-align: center;
+}
+
+.text{
+  width: 680rpx;
+}
+
+.num{
+  width: 100%;
+  text-align: right;
+  font-size: 30rpx;
+}
+
+.num-warning{
+  color: #d81e06;
+}
+
+.btn{
+  display: inline-block;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding:0 20rpx;
+  color: #ffffff;
+  background-color: #1296db;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+}
+

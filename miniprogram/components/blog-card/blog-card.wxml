@@ -1,0 +1,23 @@
+<view class="blog-box">
+  <view bindtap="toBlogDetail">
+    <view class="blog-head">
+      <image src="{{blog.avatarUrl}}" mode="scaleToFill" class="avatar"></image>
+      <text class="nickName">{{blog.nickName}}</text>
+    </view>
+    <view class="blog">{{blog.content}}</view>
+    <view class="img-box">
+      <block wx:for="{{blog.imgList}}" wx:key="index">
+        <image src="{{item}}" mode="scaleToFill" class="img" bindtap="onPreviewShow" data-index="{{index}}"></image>
+      </block>
+    </view>
+  </view>
+  <view class="footer">
+    <text class="time">{{createTime}}</text>
+    <view class="btn-box">
+        <i class="iconfont iconxinaixin1 icon-footer {{blog.isLike?'like':''}}" bindtap="onLike"></i>
+      <button class="btn icon-footer" open-type="getUserInfo" bindgetuserinfo="ongetuserinfo">
+        <i class="iconfont iconpinglun"></i>
+      </button>
+    </view>
+  </view>
+</view>

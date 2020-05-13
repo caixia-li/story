@@ -1,0 +1,16 @@
+<view>
+  <view class="booklist">
+    <block wx:for="{{bookList}}" wx:key="bookId">
+      <view class="booklist-item" data-index="{{index}}" bindtap="goArticle" bindlongtap="bookHandle" bindtouchstart="touchstartHandle" bindtouchend="touchendHandle">
+        <image src="{{item.imgSrc}}" mode="scaleToFill"></image>
+        <view class="booklist-detail">
+          <view class="title">{{item.title}}</view>
+          <view class="author">{{item.author}}</view>
+          <view class="sign">{{item.sign}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<popup shanchu="iconshanchu" fenxiang="iconfenxiang" iconfont="iconfont" bookDetail="{{bookDetail}}" isShow="{{isShow}}" bind:onClose="onClose" bind:onDel="onDel"></popup>

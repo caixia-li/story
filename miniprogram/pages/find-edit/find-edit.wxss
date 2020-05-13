@@ -1,0 +1,80 @@
+.text{
+  padding: 20rpx;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+
+.textarea{
+  line-height: 50rpx;
+  width: 100%;
+}
+
+.box{
+  box-sizing: border-box;
+  width: 750rpx;
+  padding: 20rpx 20rpx 20rpx 10rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-box{
+  position: relative;
+}
+
+.img{
+  height: 230rpx;
+  width: 230rpx;
+  margin-left: 10rpx;
+}
+
+.icon-add{
+  box-sizing: border-box;
+  border: 1px solid #b9b3b3;
+  line-height: 230rpx;
+  text-align: center;
+  font-size: 120rpx;
+  color: #b9b3b3;
+}
+
+.icon-del{
+  box-sizing: border-box;
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+  height: 50rpx;
+  width: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 48rpx;
+  color: #ffffff;
+  background-color: #777777bb;
+  border-radius: 50%;
+}
+
+.tip{
+  box-sizing: border-box;
+  width: 750rpx;
+  padding: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+  color: #777777;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.tip-text{
+  color: #d81e06;
+}
+
+.publish{
+  color: #ffffff;
+  background-color: #d81e06;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0rpx 20rpx;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+  font-family: "kaiti";
+}
+
+

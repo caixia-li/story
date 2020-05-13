@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "search":"/components/search/search",
+    "blog-card":"/components/blog-card/blog-card",
+    "comment": "/components/comment/comment"
+  },
+  "enablePullDownRefresh": true
+}

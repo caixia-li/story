@@ -1,0 +1,20 @@
+button{
+  line-height: 1;
+}
+
+.icon-publish{
+  position: fixed;
+  right: 40rpx;
+  bottom: 20rpx;
+  padding: 20rpx;
+  border-radius: 50%;
+  color: #acacaccc;
+  font-size: 50rpx;
+  background-color: #ececec93;
+}
+
+.empty{
+  line-height: 500rpx;
+  text-align: center;
+  color: #777777;
+}
