@@ -220,8 +220,8 @@ Page({
       wx.showToast({
         title: '发布成功'
       })
+      this.getBookComment();
     })
-    this.getBookComment();
   },
   onClose() {
     this.setData({

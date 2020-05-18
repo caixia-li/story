@@ -80,6 +80,7 @@ Page({
   getBookList(tag){
     wx.showLoading({
       title: '加载中...',
+      mask:true
     })
     wx.cloud.callFunction({
       name:'book',

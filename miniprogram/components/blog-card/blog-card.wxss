@@ -6,7 +6,6 @@
   padding: 0 20rpx;
   font-family: "kaiti";
   margin-bottom: 10rpx;
-  border-radius: 20rpx;
   border-bottom: 1rpx solid #eeebeb;
 }
 

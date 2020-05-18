@@ -15,6 +15,10 @@ Page({
     this.getBookHistory()
   },
   getBookHistory() {
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    })
     wx.cloud.callFunction({
       name: "bookHistory",
       data: {
@@ -23,6 +27,7 @@ Page({
     }).then(res => {
       let list = res.result.data;
       if (list.length > 0) {
+        wx.hideLoading();
         list.forEach(item => {
           bookArr.push({
             bookId: item.bookId,

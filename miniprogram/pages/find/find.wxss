@@ -5,12 +5,12 @@ button{
 .icon-publish{
   position: fixed;
   right: 40rpx;
-  bottom: 20rpx;
+  bottom: 160rpx;
   padding: 20rpx;
   border-radius: 50%;
-  color: #acacaccc;
+  color: #929090cc;
   font-size: 50rpx;
-  background-color: #ececec93;
+  background-color: #d3cccc93;
 }
 
 .empty{

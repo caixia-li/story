@@ -19,7 +19,7 @@
 
 .booklist-detail{
   width: 490rpx;
-  margin-left: 30rpx;
+  margin-left: 10rpx;
   box-sizing: border-box;
   padding: 0px 20rpx;
   height: 200rpx;
@@ -33,7 +33,7 @@
 .booklist-detail .author{
   font-size: 30rpx;
   color: #777777;
-  margin: 15rpx 0;
+  margin: 20rpx 0;
 }
 
 .booklist-detail .sign{

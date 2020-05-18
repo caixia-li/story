@@ -15,12 +15,17 @@ Page({
     this.getBookCollect()
   },
   getBookCollect() {
+    wx.showLoading({
+      title: '加载中...',
+      mask: true
+    })
     wx.cloud.callFunction({
       name: "bookcollect",
       data: {
         $url: "getBookCollect"
       }
     }).then(res => {
+      wx.hideLoading();
       let list = res.result.data;
       if (list.length > 0) {
         list.forEach(item => {

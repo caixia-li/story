@@ -6,7 +6,7 @@
   height: 100rpx;
   display: flex;
   align-items: center;
-  padding: 15rpx 20rpx;
+  padding: 60rpx 20rpx;
 }
 .search{
   display: flex;
